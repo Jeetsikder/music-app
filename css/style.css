@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
+:root {
+}
+
+body {
+  background-color: #0c0f12e4;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+a {
+  color: #f50e5d;
+  text-decoration: none;
+}
+a:hover {
+  color: #f50e5d;
+}
+/* NAVBAR */
+.navbar {
+  transition: all 0.4s ease-in;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: white;
+  font-weight: 600;
+  transition: all 0.4s ease-in-out;
+}
+.navbar-nav a:hover {
+  color: #f50e5d;
+}
+.navbar .navbar-nav .nav-link.active {
+  color: #f50e5d;
+}
+.navbar-toggler {
+  color: white;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.931);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.scrolled {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2)
+  );
+  color: black;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  box-shadow: 0px 15px 40px rgba(245, 14, 95, 0.51);
+  padding-left: 7px;
+  padding-bottom: 7px;
+}
+#home {
+  color: #ef2a6f;
+}
+/* BTN */
+.btn {
+  font-weight: 500;
+  padding: 14px 32px;
+  border-radius: 0;
+  transition: all 0.3s ease-in-out;
+}
+.btn-brand {
+  background-color: #f50e5d;
+  border-color: #f50e5d;
+  color: white;
+}
+.btn-brand:hover {
+  background-color: #ef2a6f;
+  color: white;
+  border-color: white;
+  transform: scale(1.2);
+}
+.btn-brand:focus {
+  background-color: #ef2a6f;
+  border-color: #ef2a6f;
+  color: white;
+}
+/* HERO */
+#hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.355)),
+    url(/others/hero-cover.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* SONG DETAILS */
+#song-section {
+  /* background-color: #0c0f12e4; */
+}
+#song-details {
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.355)),
+    url(/others/bg-1.jpg);
+  background-position: center;
+  background-size: cover;
+  box-shadow: rgba(245, 14, 95, 0.31) 0px 50px 100px -20px,
+    rgba(255, 255, 255, 0.11) 0px 30px 60px -30px,
+    rgba(255, 255, 255, 0.21) 0px -2px 6px 0px inset;
+}
+
+/* SONG ITEM */
+.song-item {
+  background: linear-gradient(rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.755));
+  transition: all 0.3s ease;
+}
+
+.song-item:hover {
+  transform: scale(1.03);
+}
+.song-item img {
+  width: 43px;
+  border-radius: 23px;
+}
+.song-item i {
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+/* CONTROL PANEL */
+#control-panel {
+  background: linear-gradient(rgba(0, 0, 0, 0.255), rgba(0, 0, 0, 0.555)),
+    url(/others/conntRolPnl-Bg-1.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+/* PROGRESS BAR */
+#myProgressBar {
+  width: 100%;
+}
+
+input {
+  cursor: pointer;
+}
+input,
+output {
+  font-size: 1.1rem;
+}
+
+output {
+  background-color: #f50e5d;
+  padding: 10px 30px;
+  color: white;
+  border-radius: 12px;
+}
+
+/* CONTROL PANAL ICON */
+
+/* VOLUME  */
+.volume-container {
+  position: relative;
+  overflow: hidden;
+  height: 70px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.volume-icon {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.301),
+    rgba(245, 14, 95, 0.978)
+  );
+  /* color: rgba(245, 14, 95, 0.978); */
+  padding: 14px 32px;
+  /* border-radius: 100px; */
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  position: absolute;
+  top: 0;
+}
+
+.volume-container input {
+  transition: all 0.4s ease;
+  opacity: 0;
+  top: 100%;
+  cursor: pointer;
+}
+
+.volume-container output {
+  padding: 10px 20px;
+}
+
+#rangeValueOutput {
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.volume-container:hover input {
+  opacity: 1;
+  top: 50%;
+  cursor: pointer;
+}
+.volume-container:hover #rangeValueOutput {
+  opacity: 1;
+}
+.volume-container:hover .volume-icon {
+  transform: translateY(-100px);
+}
+
+.control-panel-icon i {
+  font-size: 4rem;
+}
+
+.icons {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.icons:hover {
+  transform: scale(1.2);
+  color: #ef2a6f;
+}
+
+/* FOOTER */
+footer {
+  padding-top: 80px;
+  background-color: #303050;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
+  color: rgba(255, 255, 255, 0.435);
+}
+
+.footer-bottom {
+  color: rgba(255, 255, 255, 0.435);
+}
+
+.footer-bottom {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.235);
+}
