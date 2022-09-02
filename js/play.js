@@ -79,6 +79,13 @@ const controlPanelSongName = function (i) {
   });
 };
 
+const timeUpdateElement = function () {
+  let timeStamp = document.getElementsByClassName("timeStamp");
+  Array.from(timeStamp).forEach((element) => {
+    element.innerHTML = " ";
+  });
+};
+
 // NAV BTN
 let NavePlayBtn = document.getElementById("NavePlayBtn");
 NavePlayBtn.addEventListener("click", (e) => {
@@ -101,7 +108,7 @@ songs.forEach((element, i) => {
                     >
                         <img src="${element.coverPath}" class="" alt="" />
                         <p class="">${element.songName}</p>
-                        <p class="timeStamp" id="timeUpdate${i + 1}">5.5m</p>
+                        <p class="timeStamp" id="timeUpdate${i + 1}"></p>
                         <div class="icon icons">
                         <i class="ri-play-circle-fill songItemPlay"></i>
                         </div>
@@ -169,6 +176,7 @@ audioElement.addEventListener("timeupdate", () => {
         : Math.floor((currentSongTime * 100) % 60)
     }`
   );
+  timeUpdateElement();
   timeUpdate.innerText = currentSongTime;
 });
 
