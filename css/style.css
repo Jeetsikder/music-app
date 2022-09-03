@@ -223,6 +223,10 @@ output {
   color: #ef2a6f;
 }
 
+.icons:focus {
+  color: white;
+}
+
 /* FOOTER */
 footer {
   padding-top: 80px;
