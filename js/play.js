@@ -162,7 +162,7 @@ audioElement.addEventListener("timeupdate", () => {
   //   console.log(progress);
 
   // UPDATE INDIVIDUAL ELEMENT
-  let timeUpdate = document.getElementById(`timeUpdate${golobalSong + 1}`);
+  let timeUpdate = document.getElementById(`timeUpdate${golobalSong}`);
   let currentSongTime = audioElement.currentTime / 60;
   currentSongTime = `${Math.floor((currentSongTime * 100) / 60)}:${
     Math.floor((currentSongTime * 100) % 60).toString().length === 1
@@ -195,8 +195,8 @@ Array.from(songItemPlay).forEach((element, i) => {
     element.classList.remove("ri-play-circle-fill");
 
     // AUDIO LINK UPDATE
-    golobalSong = i;
-    audioElement.src = `songs/${golobalSong + 1}.mp3`;
+    golobalSong = i + 1;
+    audioElement.src = `songs/${golobalSong}.mp3`;
 
     audioElement.play();
 
