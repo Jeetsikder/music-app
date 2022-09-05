@@ -11,55 +11,55 @@ let songItemPlay = document.getElementsByClassName("songItemPlay");
 let song = "";
 let songs = [
   {
-    songName: "Warriyo - Mortals [NCS Release]",
+    songName: "King - Tu Aake Dekhle",
     filPath: "songs/1.mp3",
     coverPath: "covers/1.jpg",
   },
 
   {
-    songName: "Cielo - Huma-Huma",
+    songName: "Ranjha – Official Video | Shershaah",
     filPath: "songs/2.mp3",
     coverPath: "covers/2.jpg",
   },
 
   {
-    songName: "DEAF KEV - Invincible [NCS Release]-320k",
+    songName: "Radhe Title Track | Radhe - Your Most Wanted Bhai ",
     filPath: "songs/3.mp3",
     coverPath: "covers/3.jpg",
   },
 
   {
-    songName: "Different Heaven & EH!DE - My Heart [NCS Release]",
+    songName: "Dhadhang Dhang",
     filPath: "songs/4.mp3",
     coverPath: "covers/4.jpg",
   },
 
   {
-    songName: "Janji-Heroes-Tonight-feat-Johnning-NCS-Release",
+    songName: "Bhool Bhulaiyaa Title Track",
     filPath: "songs/5.mp3",
     coverPath: "covers/5.jpg",
   },
 
   {
-    songName: "Sakhiyaan - Salam-e-Ishq",
+    songName: "Laila main laila",
     filPath: "songs/6.mp3",
     coverPath: "covers/6.jpg",
   },
 
   {
-    songName: "Bhula Dena - Salam-e-Ishq",
+    songName: "SAKHIYAAN",
     filPath: "songs/7.mp3",
     coverPath: "covers/7.jpg",
   },
 
   {
-    songName: "Tumhari Kasam - Salam-e-Ishq",
+    songName: "Dil Na Diya | Krish",
     filPath: "songs/8.mp3",
     coverPath: "covers/8.jpg",
   },
 
   {
-    songName: "Na Jaana - Salam-e-Ishq",
+    songName: "Humko Sirf Tumse Pyaar Hai",
     filPath: "songs/9.mp3",
     coverPath: "covers/9.jpg",
   },
